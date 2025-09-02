@@ -74,5 +74,9 @@ weather-now/
 ├── vite.config.js
 ├── index.html
 └── README.md
+
+
+
+
 API Usage
 This application uses the Open-Meteo Weather API for weather data and geocoding. The API is free to use and does not require an API key.
