@@ -1,12 +1,56 @@
-# React + Vite
+Weather Now Application
+Overview
+Weather Now is a responsive web application designed for outdoor enthusiasts who need quick access to current weather conditions for any city. Built with a modern frontend framework, this app provides an intuitive interface for checking weather data with minimal effort.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Current Weather Search: Get real-time weather data for any city worldwide
 
-Currently, two official plugins are available:
+Responsive Design: Optimized for both desktop and mobile devices
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clean UI/UX: Simple, intuitive interface with clear weather information
 
-## Expanding the ESLint configuration
+Error Handling: Graceful handling of invalid locations and network issues
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Visual Weather Indicators: Icons representing current weather conditions
+
+Technology Stack
+Framework: React
+Styling: CSS
+API: Open-Meteo API (free, no authentication required)
+State Management: React hooks (useState, useEffect)
+
+API Integration
+This application uses the Open-Meteo API to fetch weather data:
+
+Current weather endpoint: https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,weather_code,wind_speed_10m,relative_humidity_2m
+
+Getting Started
+Prerequisites
+Node.js (v14 or higher)
+
+npm or yarn
+
+Installation
+Clone the repository:
+
+bash
+git clone [repository-url]
+cd weather-now
+Install dependencies:
+
+bash
+npm install
+Start the development server:
+
+bash
+npm start
+Open http://localhost:3000 to view the app in your browser.
+
+Usage
+Enter a city name in the search input field
+
+Press Enter or click the search button
+
+View current weather conditions including temperature, humidity, wind speed, and weather description
+
+Search for another location at any time
