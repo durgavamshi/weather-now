@@ -26,10 +26,10 @@ Lucide React: Modern icon library
 CSS3: Styling with modern features like backdrop-filter
 
 Installation
-Clone the repository:
+Clone the repository:https://github.com/durgavamshi/weather-now.git
 
 bash
-git clone <your-repo-url>
+git clone https://github.com/durgavamshi/weather-now.git
 cd weather-now
 Install dependencies:
 
