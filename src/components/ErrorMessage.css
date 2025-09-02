@@ -1,0 +1,40 @@
+.error-message {
+  background: rgba(231, 76, 60, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 500px;
+  animation: shake 0.5s ease-in-out;
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
+}
+
+.error-message p {
+  margin: 0;
+  font-weight: 500;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@media (max-width: 600px) {
+  .error-message {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .error-message {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,47 @@
+.unit-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.unit-label {
+  color: white;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.unit-buttons {
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.unit-buttons button {
+  background: none;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.unit-buttons button.active {
+  background: white;
+  color: #0984e3;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .unit-toggle {
+    margin-bottom: 0.8rem;
+  }
+  
+  .unit-buttons button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
